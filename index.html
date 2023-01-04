@@ -1,0 +1,74 @@
+<html>
+    <head>
+       <title>My Selfie App</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link href="style.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.min.js" integrity="sha512-dQIiHSl2hr3NWKKLycPndtpbh5iaHLo6MwrXm7F0FM5e+kL2U16oE9uIwPHUl6fQBeCthiEuV/rzP3MiAB8Vfw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+ 
+<body>
+    <div class="container">
+    <center>
+        <a href="" id="link" download="myselfie.png"></a>
+        
+        <h1>Voice Selfie App 
+         <img id="logo_img" src="istockphoto-1223296023-640x640.jpeg">
+        </h1>
+        <hr>
+        <h4 style="color:red;">Please press allow as soon as popup comes. After you give a voice command. </h4>
+        <h4 style="color:green;"> The Voice Command Should be "take my selfie".</h4>
+       
+        
+        <div class="form-group">
+            <h3>Say "take my selfie"</h3>
+            <label>Your voice output : </label>
+            <textarea class="form-control" id="textbox" readonly="true"> </textarea>
+           
+
+        </div>
+        <button class="btn btn-primary" onclick="start()"> Start! </button>
+
+        <p>Press the Start button</p>
+        
+        <label style="color:blue;"> The Next Section is a Camera!</label>
+        <label>Your webcam : </label>
+        <div id="camera"> </div>
+
+        <br>
+
+        <label style="color: green;">Your Selfie you Took Will Display Here: </label>
+        <div id="resultShow"> 
+           <div id="result1">
+           <img src="v4-460px-Draw-a-Cute-Cartoon-Person-Step-14.jpeg" style="width: 30%">
+           </div>
+           <h1 id="Text1"> Michael.</h1>
+           <hr>
+
+           <div id="result2">
+             <img src="istockphoto-1339089882-640x640.jpeg" style="width: 30%">
+           </div>
+            <h1 id="Text2"> Sam</h1>
+           <hr>
+
+           <div id="result3">  
+             <img src="Cool Dude.png" style="width: 30%">
+           </div>
+             
+        </div>
+         <h1 id="Text3"> Jones</h1>
+    </center>
+
+    <hr column="100" style="color: green;"> 
+
+    <div class="copy_right_footer"> 
+        Developed by -Pete 
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
